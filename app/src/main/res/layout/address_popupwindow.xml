@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9000">
+
+    <LinearLayout
+        android:id="@+id/ll_popup_add"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_popup_add"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@drawable/toast_actionsheet_top_normal"
+            android:text="省"/>
+
+        <include layout="@layout/gray_divider"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_popup_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"/>
+
+        <TextView
+            android:id="@+id/tv_popup_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:background="@drawable/actionsheet_single_selector"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="取消"/>
+    </LinearLayout>
+
+</RelativeLayout>
